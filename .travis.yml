@@ -6,7 +6,6 @@ before_install:
  - docker build -t zafar/mynginx .
 #script:
 # - docker run -e CI=true zafar/mynginx
-#deployment phase
 deploy:
  provider: elasticbeanstalk
  region: "us-east-2" 
