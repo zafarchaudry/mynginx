@@ -5,3 +5,14 @@ before_install:
  - docker build -t zafar/mynginx .
 script:
  - docker run -e CI=true zafar/mynginx
+deploy:
+ provider: elasticbeanstalk
+ region: 
+ app: "mynginx"
+ env: "Mynginx-env" 
+ bucket_name: "elasticbeanstalk-us-east-2-230997817430"
+ bucket_path: "mynginx"
+ on:
+  branch: master
+ access_key_id: $AWS_ACCESS_KEY
+ secret_access_key: $AWS_SECRET_KEY
