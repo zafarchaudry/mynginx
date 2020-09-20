@@ -12,7 +12,7 @@ deploy:
  region: 
  app: "mynginx"
  env: "Mynginx-env" 
- bucket_name: "elasticbeanstalk-us-east-2-230997817430"
+ bucket_name: "mynginx"
  bucket_path: "mynginx"
  on:
   branch: master
