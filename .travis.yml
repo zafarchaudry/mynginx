@@ -3,8 +3,8 @@ services:
  - docker
 before_install:
  - docker build -t zafar/mynginx .
-script:
- - docker run -e CI=true zafar/mynginx
+#script:
+# - docker run -e CI=true zafar/mynginx
 deploy:
  provider: elasticbeanstalk
  region: 
