@@ -9,11 +9,11 @@ before_install:
 #deployment phase
 deploy:
  provider: elasticbeanstalk
- region: 
- app: "mynginx"
- env: "Mynginx-env" 
- bucket_name: "mynginx"
- bucket_path: "mynginx"
+ region: "us-east-2" 
+ app: "docker"
+ env: "Docker-env" 
+ bucket_name: "elasticbeanstalk-us-east-2-230997817430"
+ bucket_path: "docker"
  on:
   branch: master
  access_key_id: $AWS_ACCESS_KEY
